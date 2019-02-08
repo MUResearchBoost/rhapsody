@@ -12,6 +12,7 @@ flask = "*"
 numpy = "*"
 scipy = "*"
 gunicorn = "*"
+tensorflow = "*"
 
 [requires]
 python_version = "3.6"
