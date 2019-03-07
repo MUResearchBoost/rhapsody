@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 ptpython = "*"
 pylint = "*"
+sklearn = "*"
+gensim = "*"
 
 [packages]
 flask = "*"
@@ -13,6 +15,7 @@ numpy = "*"
 scipy = "*"
 gunicorn = "*"
 tensorflow = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.6"

@@ -2,7 +2,7 @@ from time import time
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
-from lda.toolfunction import print_top_words
+from .toolfunction import print_top_words
 
 
 class Clustering_algorithm:

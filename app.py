@@ -1,10 +1,10 @@
 from flask import Flask, jsonify
-from lda_data_preprocess.clusering import Clustering_algorithm
-from lda_data_preprocess.toolfunction import dataset
-from lstm_data_preprocess.prepare_data import *
+from model.hzy.lda_data_preprocess.clusering import Clustering_algorithm
+from model.hzy.lda_data_preprocess.toolfunction import dataset
+from model.hzy.lstm_data_preprocess.prepare_data import *
 import time
-from lstm_data_preprocess.model_helper import *
-from lstm_data_preprocess.main import ABLSTM
+from model.hzy.lstm_data_preprocess.model_helper import *
+from model.hzy.lstm_data_preprocess.main import ABLSTM
 app = Flask(__name__)
 
 
