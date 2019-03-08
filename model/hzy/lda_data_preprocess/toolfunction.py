@@ -1,4 +1,3 @@
-from enum import Enum
 import pandas as pd
 import numpy as np
 from sklearn.datasets import fetch_20newsgroups
