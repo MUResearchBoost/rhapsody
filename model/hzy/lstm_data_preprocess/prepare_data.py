@@ -62,7 +62,7 @@ def data_preprocessing_with_dict(train, test, max_len):
 
 
 def split_dataset(x_test, y_test, dev_ratio):
-    """split test dataset to test and dev set with ratio """
+    """split test datasets to test and dev set with ratio """
     test_size = len(x_test)
     print(test_size)
     dev_size = (int)(test_size * dev_ratio)

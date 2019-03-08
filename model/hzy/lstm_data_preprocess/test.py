@@ -32,14 +32,14 @@ config = {
 }
 
 max_len = 32
-x_train, y_train = load_data("./dataset/dbpedia_data/dbpedia_csv/train.csv", sample_ratio=1e-2, one_hot=False)
-x_test0, y_test = load_data("./dataset/dbpedia_data/dbpedia_csv/test.csv", one_hot=False)
+x_train, y_train = load_data("./datasets/dbpedia_data/dbpedia_csv/train.csv", sample_ratio=1e-2, one_hot=False)
+x_test0, y_test = load_data("./datasets/dbpedia_data/dbpedia_csv/test.csv", one_hot=False)
 x_train, x_test, vocab_size, train_words, test_words, tokenizer = data_preprocessing_v2(x_train, x_test0, max_len=32,
                                                                                         max_words=50000)
-with open('./dataset/tokenizer.pickle', 'wb') as handle:
+with open('./datasets/tokenizer.pickle', 'wb') as handle:
     pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-with open('./dataset/tokenizer.pickle', 'rb') as handle:
+with open('./datasets/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 test_idx = tokenizer.texts_to_sequences(x_test0)

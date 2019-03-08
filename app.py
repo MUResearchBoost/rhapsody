@@ -30,8 +30,8 @@ def Lda_result():
 def recommendation_result():
     # load data
     #dbpedia = tf.data.Dataset('dbpedia')
-    x_train, y_train = load_data("./lstm/dataset/dbpedia_data/dbpedia_csv/train.csv", sample_ratio=1e-2, one_hot=False)
-    x_test, y_test = load_data("./lstm/dataset/dbpedia_data/dbpedia_csv/test.csv", one_hot=False)
+    x_train, y_train = load_data("./lstm/datasets/dbpedia_data/dbpedia_csv/train.csv", sample_ratio=1e-2, one_hot=False)
+    x_test, y_test = load_data("./lstm/datasets/dbpedia_data/dbpedia_csv/test.csv", one_hot=False)
 
     # data preprocessing
     x_train, x_test, vocab_size, train_words, test_words = data_preprocessing_v2(x_train, x_test, max_len=32,
@@ -39,7 +39,7 @@ def recommendation_result():
     print("train size: ", len(x_train))
     print("vocab size: ", vocab_size)
 
-    # split dataset to test and dev
+    # split datasets to test and dev
     x_test, x_dev, y_test, y_dev, dev_size, test_size = split_dataset(x_test, y_test, 0.1)
     print("Validation Size: ", dev_size)
 
