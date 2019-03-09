@@ -5,6 +5,7 @@ from model.hzy.lstm_data_preprocess.prepare_data import *
 import time
 from model.hzy.lstm_data_preprocess.model_helper import *
 from model.hzy.lstm_data_preprocess.main import ABLSTM
+import tensorflow as tf
 app = Flask(__name__)
 
 

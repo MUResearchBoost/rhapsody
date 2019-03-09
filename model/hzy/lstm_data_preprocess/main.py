@@ -1,7 +1,7 @@
 from tensorflow.python.ops.rnn import bidirectional_dynamic_rnn as bi_rnn
-from lstm_data_preprocess.prepare_data import *
+from prepare_data import *
 import time
-from lstm_data_preprocess.model_helper import *
+from model_helper import *
 from tensorflow.contrib.rnn import LSTMCell
 FLAGS = None
 
